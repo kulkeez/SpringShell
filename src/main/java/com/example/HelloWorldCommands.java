@@ -6,6 +6,12 @@ import org.springframework.shell.core.annotation.CliCommand;
 import org.springframework.shell.core.annotation.CliOption;
 import org.springframework.stereotype.Component;
 
+/**
+ * Simple example to understand how to create utilities using Spring Shell 
+ * 
+ * @author Vikram Kulkarni
+ *
+ */
 @Component
 public class HelloWorldCommands implements CommandMarker {
 	
