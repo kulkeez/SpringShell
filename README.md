@@ -3,7 +3,7 @@
 
 Spring Shell 1.2 and Spring Boot 2 Example
 =====================================================
-Congratulations! You have just developed a Spring Shell (version 1.2.0-RELEASE). 
+Congratulations! You have just developed a [Spring Shell](https://projects.spring.io/spring-shell/) (version 1.2.0-RELEASE). 
 It uses maven to compile, test, build and deploy.
 
 [Spring Shell 2.0.0](https://docs.spring.io/spring-shell/docs/2.0.0.M2/reference/htmlsingle/#_getting_started) 
