@@ -3,8 +3,8 @@
 
 Spring Shell 1.2 and Spring Boot 2 Example
 =====================================================
-Congratulations! You have just developed a [Spring Shell](https://projects.spring.io/spring-shell/) (version 1.2.0-RELEASE). 
-It uses maven to compile, test, build and deploy.
+Congratulations! You have just developed a [Spring Shell](https://projects.spring.io/spring-shell/) (version 1.2.0-RELEASE) application. 
+This application uses [Apache Maven](https://maven.apache.org/) to compile, test, build and deploy.
 
 [Spring Shell 2.0.0](https://docs.spring.io/spring-shell/docs/2.0.0.M2/reference/htmlsingle/#_getting_started) 
 with [Spring Boot 2.0.0](https://docs.spring.io/spring-boot/docs/2.0.0.M5/reference/htmlsingle/) examples along with unit and integration tests.
@@ -53,8 +53,10 @@ Once the application starts up, you would notice the hpe:> shell prompt awaiting
 Running this command should produce the following output:
 
 ## The (Custom) Spring Shell 
-```shell
-Message = [Hello World] Location = [My Console]
+```
+hpe:>hw simple --message "Hello World" --location "My custom console"
+Message = [Hello World] Location = [My custom console]
+hpe:>
 ```
 
 References
