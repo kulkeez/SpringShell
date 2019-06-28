@@ -1,5 +1,5 @@
 
-![](./img/spring-shell.png) ![](./img/plus.png) ![](./img/spring-boot.png)
+![](/src/main/resources/static/spring-shell.png) ![](/src/main/resources/static/plus.png) ![](/src/main/resources/static/spring-boot.png)
 
 Spring Shell 1.2 and Spring Boot 2 Example
 =====================================================
@@ -9,16 +9,27 @@ It uses maven to compile, test, build and deploy.
 [Spring Shell 2.0.0](https://docs.spring.io/spring-shell/docs/2.0.0.M2/reference/htmlsingle/#_getting_started) 
 with [Spring Boot 2.0.0](https://docs.spring.io/spring-boot/docs/2.0.0.M5/reference/htmlsingle/) examples along with unit and integration tests.
 
-### Build
-Execute the following command from the parent directory to build the jar file:
-```
+### Compile / Test / Install
+```bash
 mvn clean install
 ```
 
-### Run
-From the parent directory, executte the following coommand to start the application:
+### Running (through Maven)
+```bash
+mvn exec:java
 ```
-java -jar target/
+
+### Building an executable artifact
+Execute the following command from the parent directory to build the jar file:
+```bash
+mvn clean package
+```
+
+### Running compiled package
+From the parent directory, execute the following command to start the Shell application:
+```bash
+# Assumption is you've created the package already
+java -jar target/spring-shell-sample-1.0-SNAPSHOT.jar
 ```
 
 You should notice the application starting up,
@@ -38,11 +49,12 @@ You should notice the application starting up,
 hpe:>
 ```
 
-Once the application starts up, type `add 1 2` to add up two integers. You should notice `3` in the terminal.
-```
-hpe:>add 1 2
-3
-hpe:>
+Once the application starts up, you would notice the hpe:> shell prompt awaiting commands to be input.
+Running this command should produce the following output:
+
+## The (Custom) Spring Shell 
+```shell
+Message = [Hello World] Location = [My Console]
 ```
 
 References
